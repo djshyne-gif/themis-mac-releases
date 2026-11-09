@@ -1,7 +1,7 @@
 {
-  "version": "2.4",
-  "build": 5,
-  "notes": "Les boutons \u00ab Choisir\u2026 \u00bb des dossiers (sauvegarde, Design) ouvrent bien la fen\u00eatre de choix.",
-  "url": "https://api.github.com/repos/djshyne-gif/themis-mac-releases/releases/assets/726765156",
-  "signature": "xjA63u78WWF9Jxf0DAReDmSdLlh9csdcZ/0WP89zbpIvybdu4Rk/Yvh67KDTrfRtXAi9ZVGh2yJ1bi8N7aeUCw=="
+  "version": "2.5",
+  "build": 6,
+  "notes": "Biblioth\u00e8que : glisse un fichier vers une autre \u00e9tag\u00e8re pour le ranger (plusieurs \u00e0 la fois avec \u2318-clic ou \u21e7-clic).",
+  "url": "https://api.github.com/repos/djshyne-gif/themis-mac-releases/releases/assets/726792340",
+  "signature": "JXODo4YmaoxsMbmMKkLk/SoBh5YNcyp/fCPac8qNa9ZXWr+ZFcgsgMrRVeaq59K0Dq8+Xmru6a/EB4Sb/i8xBQ=="
 }

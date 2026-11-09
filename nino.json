@@ -1,7 +1,7 @@
 {
-  "version": "2.6",
-  "build": 7,
-  "notes": "Mises \u00e0 jour d\u00e9sormais publi\u00e9es depuis GitHub. Aucun changement visible dans l'app.",
-  "url": "https://api.github.com/repos/djshyne-gif/themis-mac-releases/releases/assets/726884006",
-  "signature": "dWuzRpEnaI8qlL1xATeQEYmuo6YsWy7kta0EStT84wFRc9tWWDp2TmJSPp1E9bwa4DZlqJOAUlkzayQT1dXCBA=="
+  "version": "2.7",
+  "build": 8,
+  "notes": "Fonctionne maintenant sur macOS 13 Ventura. \u00ab Nouvelle facture \u00bb n'est plus gris\u00e9 : sans client, il propose d'en ajouter un.",
+  "url": "https://api.github.com/repos/djshyne-gif/themis-mac-releases/releases/assets/728187484",
+  "signature": "iasSBO8A/UkbBsLVI1vk+QIibxyOJV66uTt0u1ivPTrVgmu5DaB+fldkgfZqMfbnAlf/Kknhu3/fHMHR1RxBAg=="
 }

@@ -1,7 +1,7 @@
 {
-  "version": "2.1",
-  "build": 2,
-  "notes": "Premi\u00e8re version : assistant de d\u00e9marrage, import des anciennes factures PDF, mises \u00e0 jour automatiques.",
-  "url": "https://api.github.com/repos/djshyne-gif/themis-mac-releases/releases/assets/726610679",
-  "signature": "u26MIJW/aPaGzdfzwLfZqV/gcqaylx1Kcpo4yfWOmbXXqa8zki8jghAwyM9PznoemtOozgjf59eaviuC5lmoAw=="
+  "version": "2.2",
+  "build": 3,
+  "notes": "Les boutons \u00ab Choisir\u2026 \u00bb (dossier partag\u00e9, logo, dossiers de l'assistant) ouvrent bien la fen\u00eatre de choix.",
+  "url": "https://api.github.com/repos/djshyne-gif/themis-mac-releases/releases/assets/726702953",
+  "signature": "q3qf/40+fBwuOaHD1m4Cd6tXjp5Mu5xALRuKw5p2TqNJK+c1a/0muc+jVYxQiGh/Bumnx/3+RkOBP6pjOfN0Cw=="
 }

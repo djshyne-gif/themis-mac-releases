@@ -2,6 +2,6 @@
   "version": "2.1",
   "build": 2,
   "notes": "Premi\u00e8re version : assistant de d\u00e9marrage, import des anciennes factures PDF, mises \u00e0 jour automatiques.",
-  "url": "https://github.com/djshyne-gif/themis-mac-releases/releases/download/brian-v2.1/brian-th-emis-2.1.zip",
-  "signature": "WswoAsc34a1smNHy4s42reqR87Mia/DeHtzI0bssPV9C5+qN5E9SHNyK7kzVv6YKmXhgRUVQzHPpGkNM3+fhBw=="
+  "url": "https://api.github.com/repos/djshyne-gif/themis-mac-releases/releases/assets/726610679",
+  "signature": "u26MIJW/aPaGzdfzwLfZqV/gcqaylx1Kcpo4yfWOmbXXqa8zki8jghAwyM9PznoemtOozgjf59eaviuC5lmoAw=="
 }

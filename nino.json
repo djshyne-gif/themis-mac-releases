@@ -2,6 +2,6 @@
   "version": "2.1",
   "build": 2,
   "notes": "Premi\u00e8re version : assistant de d\u00e9marrage, import des anciennes factures PDF, mises \u00e0 jour automatiques.",
-  "url": "https://github.com/djshyne-gif/themis-mac-releases/releases/download/nino-v2.1/nino-th-emis-2.1.zip",
-  "signature": "qaWJ6DDmXZcmqB0LFHlHvIvn7RSv1WktrPfEjwhrBkYE6nZxNVSrfgt8TzKWpw9yyiKTrQrEX/gDdKNqP9FvDQ=="
+  "url": "https://api.github.com/repos/djshyne-gif/themis-mac-releases/releases/assets/726612697",
+  "signature": "Rep7ebSgeq4qbeawBbt3EIwyL/XzeNfN6wd09HL/Tm/CT4bC7ur5WYgMlhlrJJtVkp0IP5C4I0ucBXGOSOFVCw=="
 }

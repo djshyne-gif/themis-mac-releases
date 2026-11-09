@@ -1,7 +1,7 @@
 {
-  "version": "2.5",
-  "build": 6,
-  "notes": "Biblioth\u00e8que : glisse un fichier vers une autre \u00e9tag\u00e8re pour le ranger (plusieurs \u00e0 la fois avec \u2318-clic ou \u21e7-clic).",
-  "url": "https://api.github.com/repos/djshyne-gif/themis-mac-releases/releases/assets/726792340",
-  "signature": "JXODo4YmaoxsMbmMKkLk/SoBh5YNcyp/fCPac8qNa9ZXWr+ZFcgsgMrRVeaq59K0Dq8+Xmru6a/EB4Sb/i8xBQ=="
+  "version": "2.6",
+  "build": 7,
+  "notes": "Mises \u00e0 jour d\u00e9sormais publi\u00e9es depuis GitHub. Aucun changement visible dans l'app.\n",
+  "url": "https://api.github.com/repos/djshyne-gif/themis-mac-releases/releases/assets/726882173",
+  "signature": "Hj5WNNG2DIYhynVfm17NJiqKCi4L5PsyxFhPY5unBlPu98VRg4v7yTV5N1UcV1rSzPKfJm5cIAtooaSAO/kXDQ=="
 }

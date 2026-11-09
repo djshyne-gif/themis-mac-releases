@@ -1,7 +1,7 @@
 {
-  "version": "2.9",
-  "build": 10,
-  "notes": "Corrige la fermeture de l'app sur \u00ab Nouveau client \u00bb sous macOS Ventura.",
-  "url": "https://api.github.com/repos/djshyne-gif/themis-mac-releases/releases/assets/728271868",
-  "signature": "MEXp1Ma/vwKoFQyPdPTyAy7pQTsd3bpeckJ9mluugPopMcSEE+42r4VapFt7KlZbzAFIMLpJYe79dHh/40m3DQ=="
+  "version": "2.10",
+  "build": 11,
+  "notes": "Corrige la fermeture de l'app sur \u00ab Nouveau client \u00bb sous macOS Ventura. Si l'app se ferme encore, au lancement suivant elle propose de copier le rapport pour Shyne.",
+  "url": "https://api.github.com/repos/djshyne-gif/themis-mac-releases/releases/assets/728303616",
+  "signature": "0ldrz7GWSWQ3cXW06KxyPpyRXyEaTyi+iHvlz2vA5tPhM6IuA2C4qS9BoeXiQAFHkBQEqaN3Hy2Hi9RjT9cjDA=="
 }

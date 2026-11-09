@@ -1,7 +1,7 @@
 {
-  "version": "2.4",
-  "build": 5,
-  "notes": "Les boutons \u00ab Choisir\u2026 \u00bb des dossiers (sauvegarde, Design) ouvrent bien la fen\u00eatre de choix.",
-  "url": "https://api.github.com/repos/djshyne-gif/themis-mac-releases/releases/assets/726767853",
-  "signature": "a2hb/V+Ar8vF8A2II+C8fxmCZn/LJOAFHCJ+pOLUA9mYXj33KP+Nvxz42T6FGj1p7+6Bnuo33ePY1ARwTrEzAg=="
+  "version": "2.6",
+  "build": 7,
+  "notes": "Mises \u00e0 jour d\u00e9sormais publi\u00e9es depuis GitHub. Aucun changement visible dans l'app.",
+  "url": "https://api.github.com/repos/djshyne-gif/themis-mac-releases/releases/assets/726884006",
+  "signature": "dWuzRpEnaI8qlL1xATeQEYmuo6YsWy7kta0EStT84wFRc9tWWDp2TmJSPp1E9bwa4DZlqJOAUlkzayQT1dXCBA=="
 }

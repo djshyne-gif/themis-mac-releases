@@ -1,7 +1,7 @@
 {
-  "version": "2.3",
-  "build": 4,
-  "notes": "Biblioth\u00e8que : bouton \u00ab Changer\u2026 \u00bb pour choisir un autre dossier Design (par exemple sur Google Drive).",
-  "url": "https://api.github.com/repos/djshyne-gif/themis-mac-releases/releases/assets/726750483",
-  "signature": "uImuAWHS8TrLqUzChmKkcDpnT0VFZnpRQ6p4tV7lwTA/VlWuG1A1NwdjSrEet2LgHTtyDFMHjeiCp4z2CY9kDQ=="
+  "version": "2.4",
+  "build": 5,
+  "notes": "Les boutons \u00ab Choisir\u2026 \u00bb des dossiers (sauvegarde, Design) ouvrent bien la fen\u00eatre de choix.",
+  "url": "https://api.github.com/repos/djshyne-gif/themis-mac-releases/releases/assets/726765156",
+  "signature": "xjA63u78WWF9Jxf0DAReDmSdLlh9csdcZ/0WP89zbpIvybdu4Rk/Yvh67KDTrfRtXAi9ZVGh2yJ1bi8N7aeUCw=="
 }

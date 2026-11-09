@@ -1,7 +1,7 @@
 {
-  "version": "2.2",
-  "build": 3,
-  "notes": "Les boutons \u00ab Choisir\u2026 \u00bb (dossier partag\u00e9, logo, dossiers de l'assistant) ouvrent bien la fen\u00eatre de choix.",
-  "url": "https://api.github.com/repos/djshyne-gif/themis-mac-releases/releases/assets/726708840",
-  "signature": "ErbI61Cap7tyCkTPgTnG+3cFO3CM2lnvHhZ1VY1T/amIBCuIwnCuTwLV2d2dlYo2kRJGw/9A1PJnsMdOC3VKBQ=="
+  "version": "2.4",
+  "build": 5,
+  "notes": "Les boutons \u00ab Choisir\u2026 \u00bb des dossiers (sauvegarde, Design) ouvrent bien la fen\u00eatre de choix.",
+  "url": "https://api.github.com/repos/djshyne-gif/themis-mac-releases/releases/assets/726767853",
+  "signature": "a2hb/V+Ar8vF8A2II+C8fxmCZn/LJOAFHCJ+pOLUA9mYXj33KP+Nvxz42T6FGj1p7+6Bnuo33ePY1ARwTrEzAg=="
 }

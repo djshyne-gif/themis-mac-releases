@@ -1,0 +1,62 @@
+# Lives in the PUBLIC repository djshyne-gif/themis-mac-releases. Started by the "Mac release" build
+# of themis-cleaning-app once a draft is ready; waits for Shyne's "Approve" (environment "clients",
+# required reviewer) before the update reaches Brian or Nino. Then it publishes the draft and writes
+# the feed their app reads (brian.json / nino.json).
+name: Publish
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Draft to publish (e.g. brian-v2.6)"
+        required: true
+permissions:
+  contents: write
+concurrency:
+  group: publish-feeds
+  cancel-in-progress: false
+jobs:
+  publish:
+    name: Publish ${{ inputs.tag }}
+    runs-on: ubuntu-latest
+    environment: clients
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TAG: ${{ inputs.tag }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: The draft holds exactly the 4 expected files
+        run: |
+          case "$TAG" in brian-v*|nino-v*) ;; *) echo "::error::unexpected tag $TAG"; exit 1 ;; esac
+          EDITION="${TAG%%-v*}"; V="${TAG#*-v}"
+          gh release view "$TAG" --repo "$GITHUB_REPOSITORY" --json isDraft,assets -q '[.isDraft, (.assets|map(.name)|sort|join(","))]|@tsv' > r.txt
+          cat r.txt
+          test "$(cut -f1 r.txt)" = "true" || { echo "::error::$TAG is not a draft"; exit 1; }
+          test "$(cut -f2 r.txt)" = "${EDITION}-th-emis-$V.zip,${EDITION}-th-emis-$V.zip.sig,${EDITION}_th-emis.dmg,release.json" || { echo "::error::unexpected files"; exit 1; }
+      - name: Publish the release
+        run: gh release edit "$TAG" --repo "$GITHUB_REPOSITORY" --draft=false --latest=false
+      - name: Write the feed (the apps offer the update within 6 hours)
+        run: |
+          EDITION="${TAG%%-v*}"; V="${TAG#*-v}"
+          mkdir -p dl && gh release download "$TAG" --repo "$GITHUB_REPOSITORY" -p release.json -p "*.sig" -D dl
+          ID="$(gh api "repos/$GITHUB_REPOSITORY/releases/tags/$TAG" -q ".assets[] | select(.name == \"${EDITION}-th-emis-$V.zip\") | .id")"
+          python3 - "$EDITION.json" "dl/release.json" "dl/${EDITION}-th-emis-$V.zip.sig" "https://api.github.com/repos/$GITHUB_REPOSITORY/releases/assets/$ID" <<'PY'
+          import json, sys
+          out, meta, sig, url = sys.argv[1:]
+          m = json.load(open(meta))
+          feed = {"version": m["version"], "build": m["build"], "notes": m["notes"], "url": url, "signature": open(sig).read().strip()}
+          json.dump(feed, open(out, "w"), indent=2)
+          open(out, "a").write("\n")
+          PY
+          cat "$EDITION.json"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$EDITION.json"
+          git commit -m "Publish $TAG"
+          git push
+      - name: Check what the apps now read
+        run: |
+          EDITION="${TAG%%-v*}"; V="${TAG#*-v}"
+          sleep 5
+          URL="$(jq -r .url "$EDITION.json")"
+          curl -sfL -H "Accept: application/octet-stream" -o check.zip "$URL"
+          test -s check.zip && echo "Feed and download OK for $TAG"
